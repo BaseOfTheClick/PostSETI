@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kevr/dev/cpp/SETIJam/server
+CMAKE_SOURCE_DIR = /home/kevr/dev/cpp/PostSETI/server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kevr/dev/cpp/SETIJam/server/build
+CMAKE_BINARY_DIR = /home/kevr/dev/cpp/PostSETI/server/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -73,14 +73,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/kevr/dev/cpp/SETIJam/server/build/CMakeFiles /home/kevr/dev/cpp/SETIJam/server/build/src/CMakeFiles/progress.marks
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevr/dev/cpp/SETIJam/server/build/CMakeFiles 0
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/kevr/dev/cpp/PostSETI/server/build/CMakeFiles /home/kevr/dev/cpp/PostSETI/server/build/src/CMakeFiles/progress.marks
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kevr/dev/cpp/PostSETI/server/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -89,22 +89,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/SETI-Server.dir/rule:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/SETI-Server.dir/rule
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/SETI-Server.dir/rule
 .PHONY : src/CMakeFiles/SETI-Server.dir/rule
 
 # Convenience name for target.
@@ -113,7 +113,7 @@ SETI-Server: src/CMakeFiles/SETI-Server.dir/rule
 
 # fast build rule for target.
 SETI-Server/fast:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/build
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/build
 .PHONY : SETI-Server/fast
 
 game/galaxy.o: game/galaxy.cpp.o
@@ -121,7 +121,7 @@ game/galaxy.o: game/galaxy.cpp.o
 
 # target to build an object file
 game/galaxy.cpp.o:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/game/galaxy.cpp.o
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/game/galaxy.cpp.o
 .PHONY : game/galaxy.cpp.o
 
 game/galaxy.i: game/galaxy.cpp.i
@@ -129,7 +129,7 @@ game/galaxy.i: game/galaxy.cpp.i
 
 # target to preprocess a source file
 game/galaxy.cpp.i:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/game/galaxy.cpp.i
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/game/galaxy.cpp.i
 .PHONY : game/galaxy.cpp.i
 
 game/galaxy.s: game/galaxy.cpp.s
@@ -137,7 +137,7 @@ game/galaxy.s: game/galaxy.cpp.s
 
 # target to generate assembly for a file
 game/galaxy.cpp.s:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/game/galaxy.cpp.s
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/game/galaxy.cpp.s
 .PHONY : game/galaxy.cpp.s
 
 game/planet.o: game/planet.cpp.o
@@ -145,7 +145,7 @@ game/planet.o: game/planet.cpp.o
 
 # target to build an object file
 game/planet.cpp.o:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/game/planet.cpp.o
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/game/planet.cpp.o
 .PHONY : game/planet.cpp.o
 
 game/planet.i: game/planet.cpp.i
@@ -153,7 +153,7 @@ game/planet.i: game/planet.cpp.i
 
 # target to preprocess a source file
 game/planet.cpp.i:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/game/planet.cpp.i
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/game/planet.cpp.i
 .PHONY : game/planet.cpp.i
 
 game/planet.s: game/planet.cpp.s
@@ -161,7 +161,7 @@ game/planet.s: game/planet.cpp.s
 
 # target to generate assembly for a file
 game/planet.cpp.s:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/game/planet.cpp.s
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/game/planet.cpp.s
 .PHONY : game/planet.cpp.s
 
 game/player.o: game/player.cpp.o
@@ -169,7 +169,7 @@ game/player.o: game/player.cpp.o
 
 # target to build an object file
 game/player.cpp.o:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/game/player.cpp.o
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/game/player.cpp.o
 .PHONY : game/player.cpp.o
 
 game/player.i: game/player.cpp.i
@@ -177,7 +177,7 @@ game/player.i: game/player.cpp.i
 
 # target to preprocess a source file
 game/player.cpp.i:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/game/player.cpp.i
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/game/player.cpp.i
 .PHONY : game/player.cpp.i
 
 game/player.s: game/player.cpp.s
@@ -185,7 +185,7 @@ game/player.s: game/player.cpp.s
 
 # target to generate assembly for a file
 game/player.cpp.s:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/game/player.cpp.s
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/game/player.cpp.s
 .PHONY : game/player.cpp.s
 
 log/log.o: log/log.cpp.o
@@ -193,7 +193,7 @@ log/log.o: log/log.cpp.o
 
 # target to build an object file
 log/log.cpp.o:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/log/log.cpp.o
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/log/log.cpp.o
 .PHONY : log/log.cpp.o
 
 log/log.i: log/log.cpp.i
@@ -201,7 +201,7 @@ log/log.i: log/log.cpp.i
 
 # target to preprocess a source file
 log/log.cpp.i:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/log/log.cpp.i
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/log/log.cpp.i
 .PHONY : log/log.cpp.i
 
 log/log.s: log/log.cpp.s
@@ -209,7 +209,7 @@ log/log.s: log/log.cpp.s
 
 # target to generate assembly for a file
 log/log.cpp.s:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/log/log.cpp.s
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/log/log.cpp.s
 .PHONY : log/log.cpp.s
 
 main.o: main.cpp.o
@@ -217,7 +217,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/main.cpp.o
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -225,7 +225,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/main.cpp.i
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -233,7 +233,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/main.cpp.s
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 network/address.o: network/address.cpp.o
@@ -241,7 +241,7 @@ network/address.o: network/address.cpp.o
 
 # target to build an object file
 network/address.cpp.o:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/address.cpp.o
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/address.cpp.o
 .PHONY : network/address.cpp.o
 
 network/address.i: network/address.cpp.i
@@ -249,7 +249,7 @@ network/address.i: network/address.cpp.i
 
 # target to preprocess a source file
 network/address.cpp.i:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/address.cpp.i
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/address.cpp.i
 .PHONY : network/address.cpp.i
 
 network/address.s: network/address.cpp.s
@@ -257,7 +257,7 @@ network/address.s: network/address.cpp.s
 
 # target to generate assembly for a file
 network/address.cpp.s:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/address.cpp.s
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/address.cpp.s
 .PHONY : network/address.cpp.s
 
 network/client.o: network/client.cpp.o
@@ -265,7 +265,7 @@ network/client.o: network/client.cpp.o
 
 # target to build an object file
 network/client.cpp.o:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/client.cpp.o
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/client.cpp.o
 .PHONY : network/client.cpp.o
 
 network/client.i: network/client.cpp.i
@@ -273,7 +273,7 @@ network/client.i: network/client.cpp.i
 
 # target to preprocess a source file
 network/client.cpp.i:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/client.cpp.i
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/client.cpp.i
 .PHONY : network/client.cpp.i
 
 network/client.s: network/client.cpp.s
@@ -281,7 +281,7 @@ network/client.s: network/client.cpp.s
 
 # target to generate assembly for a file
 network/client.cpp.s:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/client.cpp.s
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/client.cpp.s
 .PHONY : network/client.cpp.s
 
 network/select.o: network/select.cpp.o
@@ -289,7 +289,7 @@ network/select.o: network/select.cpp.o
 
 # target to build an object file
 network/select.cpp.o:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/select.cpp.o
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/select.cpp.o
 .PHONY : network/select.cpp.o
 
 network/select.i: network/select.cpp.i
@@ -297,7 +297,7 @@ network/select.i: network/select.cpp.i
 
 # target to preprocess a source file
 network/select.cpp.i:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/select.cpp.i
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/select.cpp.i
 .PHONY : network/select.cpp.i
 
 network/select.s: network/select.cpp.s
@@ -305,7 +305,7 @@ network/select.s: network/select.cpp.s
 
 # target to generate assembly for a file
 network/select.cpp.s:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/select.cpp.s
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/select.cpp.s
 .PHONY : network/select.cpp.s
 
 network/server.o: network/server.cpp.o
@@ -313,7 +313,7 @@ network/server.o: network/server.cpp.o
 
 # target to build an object file
 network/server.cpp.o:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/server.cpp.o
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/server.cpp.o
 .PHONY : network/server.cpp.o
 
 network/server.i: network/server.cpp.i
@@ -321,7 +321,7 @@ network/server.i: network/server.cpp.i
 
 # target to preprocess a source file
 network/server.cpp.i:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/server.cpp.i
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/server.cpp.i
 .PHONY : network/server.cpp.i
 
 network/server.s: network/server.cpp.s
@@ -329,7 +329,7 @@ network/server.s: network/server.cpp.s
 
 # target to generate assembly for a file
 network/server.cpp.s:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/server.cpp.s
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/server.cpp.s
 .PHONY : network/server.cpp.s
 
 network/tcp.o: network/tcp.cpp.o
@@ -337,7 +337,7 @@ network/tcp.o: network/tcp.cpp.o
 
 # target to build an object file
 network/tcp.cpp.o:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/tcp.cpp.o
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/tcp.cpp.o
 .PHONY : network/tcp.cpp.o
 
 network/tcp.i: network/tcp.cpp.i
@@ -345,7 +345,7 @@ network/tcp.i: network/tcp.cpp.i
 
 # target to preprocess a source file
 network/tcp.cpp.i:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/tcp.cpp.i
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/tcp.cpp.i
 .PHONY : network/tcp.cpp.i
 
 network/tcp.s: network/tcp.cpp.s
@@ -353,7 +353,7 @@ network/tcp.s: network/tcp.cpp.s
 
 # target to generate assembly for a file
 network/tcp.cpp.s:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/tcp.cpp.s
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(MAKE) -f src/CMakeFiles/SETI-Server.dir/build.make src/CMakeFiles/SETI-Server.dir/network/tcp.cpp.s
 .PHONY : network/tcp.cpp.s
 
 # Help Target
@@ -406,6 +406,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

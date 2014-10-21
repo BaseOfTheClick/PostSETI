@@ -2,8 +2,7 @@
 using namespace std;
 
 Galaxy::Galaxy() = default;
-#include <iostream>
-using namespace std;
+
 Player& Galaxy::newPlayer(string name)
 {
 //    if(this->find(name) != this->end())
@@ -11,7 +10,11 @@ Player& Galaxy::newPlayer(string name)
 
     auto player = Player();
     auto& world = player.world();
-    
+/* // Re-enable this later!
+    if(this->find(name) != this->end())
+        throw domain_error(name + " taken");
+*/
+
     world.vector().x = randomize();
     world.vector().y = randomize();
 
@@ -28,7 +31,6 @@ Player& Galaxy::newPlayer(string name)
 
     (*this)[name] = move(player);
 
-    cout << name;
     return (*this)[name];
 }
 

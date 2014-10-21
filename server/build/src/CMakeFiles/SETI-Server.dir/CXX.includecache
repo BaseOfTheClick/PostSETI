@@ -6,45 +6,43 @@
 
 #IncludeRegexTransform: 
 
-/home/kevr/dev/cpp/SETIJam/server/src/game/galaxy.cpp
+/home/kevr/dev/cpp/PostSETI/server/src/game/galaxy.cpp
 galaxy.h
-/home/kevr/dev/cpp/SETIJam/server/src/game/galaxy.h
-iostream
--
+/home/kevr/dev/cpp/PostSETI/server/src/game/galaxy.h
 
-/home/kevr/dev/cpp/SETIJam/server/src/game/galaxy.h
+/home/kevr/dev/cpp/PostSETI/server/src/game/galaxy.h
 player.h
-/home/kevr/dev/cpp/SETIJam/server/src/game/player.h
+/home/kevr/dev/cpp/PostSETI/server/src/game/player.h
 unordered_map
 -
 random
 -
 
-/home/kevr/dev/cpp/SETIJam/server/src/game/planet.cpp
+/home/kevr/dev/cpp/PostSETI/server/src/game/planet.cpp
 planet.h
-/home/kevr/dev/cpp/SETIJam/server/src/game/planet.h
+/home/kevr/dev/cpp/PostSETI/server/src/game/planet.h
 
-/home/kevr/dev/cpp/SETIJam/server/src/game/planet.h
+/home/kevr/dev/cpp/PostSETI/server/src/game/planet.h
 string
 -
 
-/home/kevr/dev/cpp/SETIJam/server/src/game/player.cpp
+/home/kevr/dev/cpp/PostSETI/server/src/game/player.cpp
 player.h
-/home/kevr/dev/cpp/SETIJam/server/src/game/player.h
+/home/kevr/dev/cpp/PostSETI/server/src/game/player.h
 utility
 -
 
-/home/kevr/dev/cpp/SETIJam/server/src/game/player.h
+/home/kevr/dev/cpp/PostSETI/server/src/game/player.h
 planet.h
-/home/kevr/dev/cpp/SETIJam/server/src/game/planet.h
+/home/kevr/dev/cpp/PostSETI/server/src/game/planet.h
 string
 -
 
-/home/kevr/dev/cpp/SETIJam/server/src/log/log.cpp
+/home/kevr/dev/cpp/PostSETI/server/src/log/log.cpp
 log.h
-/home/kevr/dev/cpp/SETIJam/server/src/log/log.h
+/home/kevr/dev/cpp/PostSETI/server/src/log/log.h
 
-/home/kevr/dev/cpp/SETIJam/server/src/log/log.h
+/home/kevr/dev/cpp/PostSETI/server/src/log/log.h
 ctime
 -
 fstream
@@ -52,19 +50,19 @@ fstream
 string
 -
 
-/home/kevr/dev/cpp/SETIJam/server/src/main.cpp
+/home/kevr/dev/cpp/PostSETI/server/src/main.cpp
 log/log.h
-/home/kevr/dev/cpp/SETIJam/server/src/log/log.h
+/home/kevr/dev/cpp/PostSETI/server/src/log/log.h
 network/address.h
-/home/kevr/dev/cpp/SETIJam/server/src/network/address.h
+/home/kevr/dev/cpp/PostSETI/server/src/network/address.h
 network/server.h
-/home/kevr/dev/cpp/SETIJam/server/src/network/server.h
+/home/kevr/dev/cpp/PostSETI/server/src/network/server.h
 network/select.h
-/home/kevr/dev/cpp/SETIJam/server/src/network/select.h
+/home/kevr/dev/cpp/PostSETI/server/src/network/select.h
 tools/remove_if.hpp
-/home/kevr/dev/cpp/SETIJam/server/src/tools/remove_if.hpp
+/home/kevr/dev/cpp/PostSETI/server/src/tools/remove_if.hpp
 game/galaxy.h
-/home/kevr/dev/cpp/SETIJam/server/src/game/galaxy.h
+/home/kevr/dev/cpp/PostSETI/server/src/game/galaxy.h
 map
 -
 memory
@@ -74,13 +72,13 @@ iostream
 unistd.h
 -
 
-/home/kevr/dev/cpp/SETIJam/server/src/network/address.cpp
+/home/kevr/dev/cpp/PostSETI/server/src/network/address.cpp
 address.h
-/home/kevr/dev/cpp/SETIJam/server/src/network/address.h
+/home/kevr/dev/cpp/PostSETI/server/src/network/address.h
 cstring
 -
 
-/home/kevr/dev/cpp/SETIJam/server/src/network/address.h
+/home/kevr/dev/cpp/PostSETI/server/src/network/address.h
 arpa/inet.h
 -
 netdb.h
@@ -88,47 +86,47 @@ netdb.h
 vector
 -
 
-/home/kevr/dev/cpp/SETIJam/server/src/network/client.cpp
+/home/kevr/dev/cpp/PostSETI/server/src/network/client.cpp
 client.h
-/home/kevr/dev/cpp/SETIJam/server/src/network/client.h
+/home/kevr/dev/cpp/PostSETI/server/src/network/client.h
 iostream
 -
 
-/home/kevr/dev/cpp/SETIJam/server/src/network/client.h
+/home/kevr/dev/cpp/PostSETI/server/src/network/client.h
 tcp.h
-/home/kevr/dev/cpp/SETIJam/server/src/network/tcp.h
+/home/kevr/dev/cpp/PostSETI/server/src/network/tcp.h
 memory
 -
 
-/home/kevr/dev/cpp/SETIJam/server/src/network/select.cpp
+/home/kevr/dev/cpp/PostSETI/server/src/network/select.cpp
 select.h
-/home/kevr/dev/cpp/SETIJam/server/src/network/select.h
+/home/kevr/dev/cpp/PostSETI/server/src/network/select.h
 ../tools/remove_if.hpp
-/home/kevr/dev/cpp/SETIJam/server/src/tools/remove_if.hpp
+/home/kevr/dev/cpp/PostSETI/server/src/tools/remove_if.hpp
 
-/home/kevr/dev/cpp/SETIJam/server/src/network/select.h
+/home/kevr/dev/cpp/PostSETI/server/src/network/select.h
 tcp.h
-/home/kevr/dev/cpp/SETIJam/server/src/network/tcp.h
+/home/kevr/dev/cpp/PostSETI/server/src/network/tcp.h
 sys/select.h
 -
 vector
 -
 
-/home/kevr/dev/cpp/SETIJam/server/src/network/server.cpp
+/home/kevr/dev/cpp/PostSETI/server/src/network/server.cpp
 server.h
-/home/kevr/dev/cpp/SETIJam/server/src/network/server.h
+/home/kevr/dev/cpp/PostSETI/server/src/network/server.h
 
-/home/kevr/dev/cpp/SETIJam/server/src/network/server.h
+/home/kevr/dev/cpp/PostSETI/server/src/network/server.h
 tcp.h
-/home/kevr/dev/cpp/SETIJam/server/src/network/tcp.h
+/home/kevr/dev/cpp/PostSETI/server/src/network/tcp.h
 client.h
-/home/kevr/dev/cpp/SETIJam/server/src/network/client.h
+/home/kevr/dev/cpp/PostSETI/server/src/network/client.h
 utility
 -
 
-/home/kevr/dev/cpp/SETIJam/server/src/network/tcp.cpp
+/home/kevr/dev/cpp/PostSETI/server/src/network/tcp.cpp
 tcp.h
-/home/kevr/dev/cpp/SETIJam/server/src/network/tcp.h
+/home/kevr/dev/cpp/PostSETI/server/src/network/tcp.h
 sys/socket.h
 -
 sys/types.h
@@ -140,13 +138,13 @@ cstring
 utility
 -
 
-/home/kevr/dev/cpp/SETIJam/server/src/network/tcp.h
+/home/kevr/dev/cpp/PostSETI/server/src/network/tcp.h
 address.h
-/home/kevr/dev/cpp/SETIJam/server/src/network/address.h
+/home/kevr/dev/cpp/PostSETI/server/src/network/address.h
 fcntl.h
 -
 
-/home/kevr/dev/cpp/SETIJam/server/src/tools/remove_if.hpp
+/home/kevr/dev/cpp/PostSETI/server/src/tools/remove_if.hpp
 vector
 -
 

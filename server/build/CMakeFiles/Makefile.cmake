@@ -12,6 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.0.20140806-gebd8f-dirty/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.0.20140806-gebd8f-dirty/CMakeSystem.cmake"
   "../src/CMakeLists.txt"
+  "../src/test/CMakeLists.txt"
   "/usr/share/cmake-3.0/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.0/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.0/Modules/CMakeCommonLanguageInclude.cmake"
@@ -38,9 +39,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/SETI-Server.dir/DependInfo.cmake"
+  "src/test/CMakeFiles/testbot.dir/DependInfo.cmake"
   )

@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kevr/dev/cpp/PostSETI/server/src/test/main.cpp
+iostream
+-
+sys/socket.h
+-
+sys/types.h
+-
+netdb.h
+-
+arpa/inet.h
+-
+map
+-
+vector
+-
+cstring
+-
+cstdlib
+-
+unistd.h
+-
+
+/home/kevr/dev/cpp/PostSETI/server/src/test/test.cpp
+

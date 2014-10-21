@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kevr/dev/cpp/SETIJam/server
+CMAKE_SOURCE_DIR = /home/kevr/dev/cpp/PostSETI/server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kevr/dev/cpp/SETIJam/server/build
+CMAKE_BINARY_DIR = /home/kevr/dev/cpp/PostSETI/server/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/SETI-Server.dir/depend.make
@@ -51,17 +51,17 @@ include src/CMakeFiles/SETI-Server.dir/flags.make
 
 src/CMakeFiles/SETI-Server.dir/main.cpp.o: src/CMakeFiles/SETI-Server.dir/flags.make
 src/CMakeFiles/SETI-Server.dir/main.cpp.o: ../src/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kevr/dev/cpp/SETIJam/server/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kevr/dev/cpp/PostSETI/server/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SETI-Server.dir/main.cpp.o"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SETI-Server.dir/main.cpp.o -c /home/kevr/dev/cpp/SETIJam/server/src/main.cpp
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SETI-Server.dir/main.cpp.o -c /home/kevr/dev/cpp/PostSETI/server/src/main.cpp
 
 src/CMakeFiles/SETI-Server.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SETI-Server.dir/main.cpp.i"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kevr/dev/cpp/SETIJam/server/src/main.cpp > CMakeFiles/SETI-Server.dir/main.cpp.i
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kevr/dev/cpp/PostSETI/server/src/main.cpp > CMakeFiles/SETI-Server.dir/main.cpp.i
 
 src/CMakeFiles/SETI-Server.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SETI-Server.dir/main.cpp.s"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kevr/dev/cpp/SETIJam/server/src/main.cpp -o CMakeFiles/SETI-Server.dir/main.cpp.s
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kevr/dev/cpp/PostSETI/server/src/main.cpp -o CMakeFiles/SETI-Server.dir/main.cpp.s
 
 src/CMakeFiles/SETI-Server.dir/main.cpp.o.requires:
 .PHONY : src/CMakeFiles/SETI-Server.dir/main.cpp.o.requires
@@ -74,17 +74,17 @@ src/CMakeFiles/SETI-Server.dir/main.cpp.o.provides.build: src/CMakeFiles/SETI-Se
 
 src/CMakeFiles/SETI-Server.dir/game/galaxy.cpp.o: src/CMakeFiles/SETI-Server.dir/flags.make
 src/CMakeFiles/SETI-Server.dir/game/galaxy.cpp.o: ../src/game/galaxy.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kevr/dev/cpp/SETIJam/server/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kevr/dev/cpp/PostSETI/server/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SETI-Server.dir/game/galaxy.cpp.o"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SETI-Server.dir/game/galaxy.cpp.o -c /home/kevr/dev/cpp/SETIJam/server/src/game/galaxy.cpp
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SETI-Server.dir/game/galaxy.cpp.o -c /home/kevr/dev/cpp/PostSETI/server/src/game/galaxy.cpp
 
 src/CMakeFiles/SETI-Server.dir/game/galaxy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SETI-Server.dir/game/galaxy.cpp.i"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kevr/dev/cpp/SETIJam/server/src/game/galaxy.cpp > CMakeFiles/SETI-Server.dir/game/galaxy.cpp.i
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kevr/dev/cpp/PostSETI/server/src/game/galaxy.cpp > CMakeFiles/SETI-Server.dir/game/galaxy.cpp.i
 
 src/CMakeFiles/SETI-Server.dir/game/galaxy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SETI-Server.dir/game/galaxy.cpp.s"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kevr/dev/cpp/SETIJam/server/src/game/galaxy.cpp -o CMakeFiles/SETI-Server.dir/game/galaxy.cpp.s
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kevr/dev/cpp/PostSETI/server/src/game/galaxy.cpp -o CMakeFiles/SETI-Server.dir/game/galaxy.cpp.s
 
 src/CMakeFiles/SETI-Server.dir/game/galaxy.cpp.o.requires:
 .PHONY : src/CMakeFiles/SETI-Server.dir/game/galaxy.cpp.o.requires
@@ -97,17 +97,17 @@ src/CMakeFiles/SETI-Server.dir/game/galaxy.cpp.o.provides.build: src/CMakeFiles/
 
 src/CMakeFiles/SETI-Server.dir/game/player.cpp.o: src/CMakeFiles/SETI-Server.dir/flags.make
 src/CMakeFiles/SETI-Server.dir/game/player.cpp.o: ../src/game/player.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kevr/dev/cpp/SETIJam/server/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kevr/dev/cpp/PostSETI/server/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SETI-Server.dir/game/player.cpp.o"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SETI-Server.dir/game/player.cpp.o -c /home/kevr/dev/cpp/SETIJam/server/src/game/player.cpp
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SETI-Server.dir/game/player.cpp.o -c /home/kevr/dev/cpp/PostSETI/server/src/game/player.cpp
 
 src/CMakeFiles/SETI-Server.dir/game/player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SETI-Server.dir/game/player.cpp.i"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kevr/dev/cpp/SETIJam/server/src/game/player.cpp > CMakeFiles/SETI-Server.dir/game/player.cpp.i
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kevr/dev/cpp/PostSETI/server/src/game/player.cpp > CMakeFiles/SETI-Server.dir/game/player.cpp.i
 
 src/CMakeFiles/SETI-Server.dir/game/player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SETI-Server.dir/game/player.cpp.s"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kevr/dev/cpp/SETIJam/server/src/game/player.cpp -o CMakeFiles/SETI-Server.dir/game/player.cpp.s
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kevr/dev/cpp/PostSETI/server/src/game/player.cpp -o CMakeFiles/SETI-Server.dir/game/player.cpp.s
 
 src/CMakeFiles/SETI-Server.dir/game/player.cpp.o.requires:
 .PHONY : src/CMakeFiles/SETI-Server.dir/game/player.cpp.o.requires
@@ -120,17 +120,17 @@ src/CMakeFiles/SETI-Server.dir/game/player.cpp.o.provides.build: src/CMakeFiles/
 
 src/CMakeFiles/SETI-Server.dir/game/planet.cpp.o: src/CMakeFiles/SETI-Server.dir/flags.make
 src/CMakeFiles/SETI-Server.dir/game/planet.cpp.o: ../src/game/planet.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kevr/dev/cpp/SETIJam/server/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kevr/dev/cpp/PostSETI/server/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SETI-Server.dir/game/planet.cpp.o"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SETI-Server.dir/game/planet.cpp.o -c /home/kevr/dev/cpp/SETIJam/server/src/game/planet.cpp
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SETI-Server.dir/game/planet.cpp.o -c /home/kevr/dev/cpp/PostSETI/server/src/game/planet.cpp
 
 src/CMakeFiles/SETI-Server.dir/game/planet.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SETI-Server.dir/game/planet.cpp.i"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kevr/dev/cpp/SETIJam/server/src/game/planet.cpp > CMakeFiles/SETI-Server.dir/game/planet.cpp.i
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kevr/dev/cpp/PostSETI/server/src/game/planet.cpp > CMakeFiles/SETI-Server.dir/game/planet.cpp.i
 
 src/CMakeFiles/SETI-Server.dir/game/planet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SETI-Server.dir/game/planet.cpp.s"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kevr/dev/cpp/SETIJam/server/src/game/planet.cpp -o CMakeFiles/SETI-Server.dir/game/planet.cpp.s
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kevr/dev/cpp/PostSETI/server/src/game/planet.cpp -o CMakeFiles/SETI-Server.dir/game/planet.cpp.s
 
 src/CMakeFiles/SETI-Server.dir/game/planet.cpp.o.requires:
 .PHONY : src/CMakeFiles/SETI-Server.dir/game/planet.cpp.o.requires
@@ -143,17 +143,17 @@ src/CMakeFiles/SETI-Server.dir/game/planet.cpp.o.provides.build: src/CMakeFiles/
 
 src/CMakeFiles/SETI-Server.dir/network/select.cpp.o: src/CMakeFiles/SETI-Server.dir/flags.make
 src/CMakeFiles/SETI-Server.dir/network/select.cpp.o: ../src/network/select.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kevr/dev/cpp/SETIJam/server/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kevr/dev/cpp/PostSETI/server/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SETI-Server.dir/network/select.cpp.o"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SETI-Server.dir/network/select.cpp.o -c /home/kevr/dev/cpp/SETIJam/server/src/network/select.cpp
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SETI-Server.dir/network/select.cpp.o -c /home/kevr/dev/cpp/PostSETI/server/src/network/select.cpp
 
 src/CMakeFiles/SETI-Server.dir/network/select.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SETI-Server.dir/network/select.cpp.i"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kevr/dev/cpp/SETIJam/server/src/network/select.cpp > CMakeFiles/SETI-Server.dir/network/select.cpp.i
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kevr/dev/cpp/PostSETI/server/src/network/select.cpp > CMakeFiles/SETI-Server.dir/network/select.cpp.i
 
 src/CMakeFiles/SETI-Server.dir/network/select.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SETI-Server.dir/network/select.cpp.s"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kevr/dev/cpp/SETIJam/server/src/network/select.cpp -o CMakeFiles/SETI-Server.dir/network/select.cpp.s
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kevr/dev/cpp/PostSETI/server/src/network/select.cpp -o CMakeFiles/SETI-Server.dir/network/select.cpp.s
 
 src/CMakeFiles/SETI-Server.dir/network/select.cpp.o.requires:
 .PHONY : src/CMakeFiles/SETI-Server.dir/network/select.cpp.o.requires
@@ -166,17 +166,17 @@ src/CMakeFiles/SETI-Server.dir/network/select.cpp.o.provides.build: src/CMakeFil
 
 src/CMakeFiles/SETI-Server.dir/network/client.cpp.o: src/CMakeFiles/SETI-Server.dir/flags.make
 src/CMakeFiles/SETI-Server.dir/network/client.cpp.o: ../src/network/client.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kevr/dev/cpp/SETIJam/server/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kevr/dev/cpp/PostSETI/server/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SETI-Server.dir/network/client.cpp.o"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SETI-Server.dir/network/client.cpp.o -c /home/kevr/dev/cpp/SETIJam/server/src/network/client.cpp
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SETI-Server.dir/network/client.cpp.o -c /home/kevr/dev/cpp/PostSETI/server/src/network/client.cpp
 
 src/CMakeFiles/SETI-Server.dir/network/client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SETI-Server.dir/network/client.cpp.i"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kevr/dev/cpp/SETIJam/server/src/network/client.cpp > CMakeFiles/SETI-Server.dir/network/client.cpp.i
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kevr/dev/cpp/PostSETI/server/src/network/client.cpp > CMakeFiles/SETI-Server.dir/network/client.cpp.i
 
 src/CMakeFiles/SETI-Server.dir/network/client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SETI-Server.dir/network/client.cpp.s"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kevr/dev/cpp/SETIJam/server/src/network/client.cpp -o CMakeFiles/SETI-Server.dir/network/client.cpp.s
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kevr/dev/cpp/PostSETI/server/src/network/client.cpp -o CMakeFiles/SETI-Server.dir/network/client.cpp.s
 
 src/CMakeFiles/SETI-Server.dir/network/client.cpp.o.requires:
 .PHONY : src/CMakeFiles/SETI-Server.dir/network/client.cpp.o.requires
@@ -189,17 +189,17 @@ src/CMakeFiles/SETI-Server.dir/network/client.cpp.o.provides.build: src/CMakeFil
 
 src/CMakeFiles/SETI-Server.dir/network/server.cpp.o: src/CMakeFiles/SETI-Server.dir/flags.make
 src/CMakeFiles/SETI-Server.dir/network/server.cpp.o: ../src/network/server.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kevr/dev/cpp/SETIJam/server/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kevr/dev/cpp/PostSETI/server/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SETI-Server.dir/network/server.cpp.o"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SETI-Server.dir/network/server.cpp.o -c /home/kevr/dev/cpp/SETIJam/server/src/network/server.cpp
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SETI-Server.dir/network/server.cpp.o -c /home/kevr/dev/cpp/PostSETI/server/src/network/server.cpp
 
 src/CMakeFiles/SETI-Server.dir/network/server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SETI-Server.dir/network/server.cpp.i"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kevr/dev/cpp/SETIJam/server/src/network/server.cpp > CMakeFiles/SETI-Server.dir/network/server.cpp.i
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kevr/dev/cpp/PostSETI/server/src/network/server.cpp > CMakeFiles/SETI-Server.dir/network/server.cpp.i
 
 src/CMakeFiles/SETI-Server.dir/network/server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SETI-Server.dir/network/server.cpp.s"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kevr/dev/cpp/SETIJam/server/src/network/server.cpp -o CMakeFiles/SETI-Server.dir/network/server.cpp.s
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kevr/dev/cpp/PostSETI/server/src/network/server.cpp -o CMakeFiles/SETI-Server.dir/network/server.cpp.s
 
 src/CMakeFiles/SETI-Server.dir/network/server.cpp.o.requires:
 .PHONY : src/CMakeFiles/SETI-Server.dir/network/server.cpp.o.requires
@@ -212,17 +212,17 @@ src/CMakeFiles/SETI-Server.dir/network/server.cpp.o.provides.build: src/CMakeFil
 
 src/CMakeFiles/SETI-Server.dir/network/tcp.cpp.o: src/CMakeFiles/SETI-Server.dir/flags.make
 src/CMakeFiles/SETI-Server.dir/network/tcp.cpp.o: ../src/network/tcp.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kevr/dev/cpp/SETIJam/server/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kevr/dev/cpp/PostSETI/server/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SETI-Server.dir/network/tcp.cpp.o"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SETI-Server.dir/network/tcp.cpp.o -c /home/kevr/dev/cpp/SETIJam/server/src/network/tcp.cpp
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SETI-Server.dir/network/tcp.cpp.o -c /home/kevr/dev/cpp/PostSETI/server/src/network/tcp.cpp
 
 src/CMakeFiles/SETI-Server.dir/network/tcp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SETI-Server.dir/network/tcp.cpp.i"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kevr/dev/cpp/SETIJam/server/src/network/tcp.cpp > CMakeFiles/SETI-Server.dir/network/tcp.cpp.i
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kevr/dev/cpp/PostSETI/server/src/network/tcp.cpp > CMakeFiles/SETI-Server.dir/network/tcp.cpp.i
 
 src/CMakeFiles/SETI-Server.dir/network/tcp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SETI-Server.dir/network/tcp.cpp.s"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kevr/dev/cpp/SETIJam/server/src/network/tcp.cpp -o CMakeFiles/SETI-Server.dir/network/tcp.cpp.s
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kevr/dev/cpp/PostSETI/server/src/network/tcp.cpp -o CMakeFiles/SETI-Server.dir/network/tcp.cpp.s
 
 src/CMakeFiles/SETI-Server.dir/network/tcp.cpp.o.requires:
 .PHONY : src/CMakeFiles/SETI-Server.dir/network/tcp.cpp.o.requires
@@ -235,17 +235,17 @@ src/CMakeFiles/SETI-Server.dir/network/tcp.cpp.o.provides.build: src/CMakeFiles/
 
 src/CMakeFiles/SETI-Server.dir/network/address.cpp.o: src/CMakeFiles/SETI-Server.dir/flags.make
 src/CMakeFiles/SETI-Server.dir/network/address.cpp.o: ../src/network/address.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kevr/dev/cpp/SETIJam/server/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kevr/dev/cpp/PostSETI/server/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SETI-Server.dir/network/address.cpp.o"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SETI-Server.dir/network/address.cpp.o -c /home/kevr/dev/cpp/SETIJam/server/src/network/address.cpp
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SETI-Server.dir/network/address.cpp.o -c /home/kevr/dev/cpp/PostSETI/server/src/network/address.cpp
 
 src/CMakeFiles/SETI-Server.dir/network/address.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SETI-Server.dir/network/address.cpp.i"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kevr/dev/cpp/SETIJam/server/src/network/address.cpp > CMakeFiles/SETI-Server.dir/network/address.cpp.i
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kevr/dev/cpp/PostSETI/server/src/network/address.cpp > CMakeFiles/SETI-Server.dir/network/address.cpp.i
 
 src/CMakeFiles/SETI-Server.dir/network/address.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SETI-Server.dir/network/address.cpp.s"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kevr/dev/cpp/SETIJam/server/src/network/address.cpp -o CMakeFiles/SETI-Server.dir/network/address.cpp.s
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kevr/dev/cpp/PostSETI/server/src/network/address.cpp -o CMakeFiles/SETI-Server.dir/network/address.cpp.s
 
 src/CMakeFiles/SETI-Server.dir/network/address.cpp.o.requires:
 .PHONY : src/CMakeFiles/SETI-Server.dir/network/address.cpp.o.requires
@@ -258,17 +258,17 @@ src/CMakeFiles/SETI-Server.dir/network/address.cpp.o.provides.build: src/CMakeFi
 
 src/CMakeFiles/SETI-Server.dir/log/log.cpp.o: src/CMakeFiles/SETI-Server.dir/flags.make
 src/CMakeFiles/SETI-Server.dir/log/log.cpp.o: ../src/log/log.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kevr/dev/cpp/SETIJam/server/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kevr/dev/cpp/PostSETI/server/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SETI-Server.dir/log/log.cpp.o"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SETI-Server.dir/log/log.cpp.o -c /home/kevr/dev/cpp/SETIJam/server/src/log/log.cpp
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SETI-Server.dir/log/log.cpp.o -c /home/kevr/dev/cpp/PostSETI/server/src/log/log.cpp
 
 src/CMakeFiles/SETI-Server.dir/log/log.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SETI-Server.dir/log/log.cpp.i"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kevr/dev/cpp/SETIJam/server/src/log/log.cpp > CMakeFiles/SETI-Server.dir/log/log.cpp.i
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kevr/dev/cpp/PostSETI/server/src/log/log.cpp > CMakeFiles/SETI-Server.dir/log/log.cpp.i
 
 src/CMakeFiles/SETI-Server.dir/log/log.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SETI-Server.dir/log/log.cpp.s"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kevr/dev/cpp/SETIJam/server/src/log/log.cpp -o CMakeFiles/SETI-Server.dir/log/log.cpp.s
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kevr/dev/cpp/PostSETI/server/src/log/log.cpp -o CMakeFiles/SETI-Server.dir/log/log.cpp.s
 
 src/CMakeFiles/SETI-Server.dir/log/log.cpp.o.requires:
 .PHONY : src/CMakeFiles/SETI-Server.dir/log/log.cpp.o.requires
@@ -308,7 +308,7 @@ bin/SETI-Server: src/CMakeFiles/SETI-Server.dir/log/log.cpp.o
 bin/SETI-Server: src/CMakeFiles/SETI-Server.dir/build.make
 bin/SETI-Server: src/CMakeFiles/SETI-Server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../bin/SETI-Server"
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SETI-Server.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SETI-Server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/SETI-Server.dir/build: bin/SETI-Server
@@ -327,10 +327,10 @@ src/CMakeFiles/SETI-Server.dir/requires: src/CMakeFiles/SETI-Server.dir/log/log.
 .PHONY : src/CMakeFiles/SETI-Server.dir/requires
 
 src/CMakeFiles/SETI-Server.dir/clean:
-	cd /home/kevr/dev/cpp/SETIJam/server/build/src && $(CMAKE_COMMAND) -P CMakeFiles/SETI-Server.dir/cmake_clean.cmake
+	cd /home/kevr/dev/cpp/PostSETI/server/build/src && $(CMAKE_COMMAND) -P CMakeFiles/SETI-Server.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/SETI-Server.dir/clean
 
 src/CMakeFiles/SETI-Server.dir/depend:
-	cd /home/kevr/dev/cpp/SETIJam/server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kevr/dev/cpp/SETIJam/server /home/kevr/dev/cpp/SETIJam/server/src /home/kevr/dev/cpp/SETIJam/server/build /home/kevr/dev/cpp/SETIJam/server/build/src /home/kevr/dev/cpp/SETIJam/server/build/src/CMakeFiles/SETI-Server.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kevr/dev/cpp/PostSETI/server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kevr/dev/cpp/PostSETI/server /home/kevr/dev/cpp/PostSETI/server/src /home/kevr/dev/cpp/PostSETI/server/build /home/kevr/dev/cpp/PostSETI/server/build/src /home/kevr/dev/cpp/PostSETI/server/build/src/CMakeFiles/SETI-Server.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/SETI-Server.dir/depend
 

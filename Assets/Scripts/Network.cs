@@ -74,11 +74,19 @@ public class Network : MonoBehaviour
     public Net.Connector socket = null;
     private int i = 0;
 
+    public string name = "";
+
     // Use this for initialization
-    void Start()
+    void Start() {
+    }
+
+    void OnGUI()
     {
+        Login login = GetComponent<Login>();
+        name = login.playerName;
+
         socket = new Net.Connector("np.nixcode.us", 31337);
-        socket.write("Login:" + "Kevin" + "\n");
+        socket.write("Login:" + name + "\n");
         string reply = socket.readChunk(512);
     }
 

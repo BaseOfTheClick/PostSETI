@@ -1,1 +1,2 @@
-/home/kevr/dev/cpp/SETIJam/server/build/src/CMakeFiles/SETI-Server.dir
+/home/kevr/dev/cpp/PostSETI/server/build/src/test/CMakeFiles/testbot.dir
+/home/kevr/dev/cpp/PostSETI/server/build/src/CMakeFiles/SETI-Server.dir

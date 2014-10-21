@@ -1,4 +1,4 @@
-# Install script for directory: /home/kevr/dev/cpp/SETIJam/server
+# Install script for directory: /home/kevr/dev/cpp/PostSETI/server
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/kevr/dev/cpp/SETIJam/server/build/src/cmake_install.cmake")
+  include("/home/kevr/dev/cpp/PostSETI/server/build/src/cmake_install.cmake")
 
 endif()
 
@@ -44,7 +44,7 @@ else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-file(WRITE "/home/kevr/dev/cpp/SETIJam/server/build/${CMAKE_INSTALL_MANIFEST}" "")
+file(WRITE "/home/kevr/dev/cpp/PostSETI/server/build/${CMAKE_INSTALL_MANIFEST}" "")
 foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  file(APPEND "/home/kevr/dev/cpp/SETIJam/server/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  file(APPEND "/home/kevr/dev/cpp/PostSETI/server/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 endforeach()

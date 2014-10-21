@@ -14,5 +14,7 @@ add_executable(SETI-Server
     log/log.cpp
 )
 
+add_subdirectory(test)
+
 #target_link_libraries(SETI-Server mysqlclient)
 

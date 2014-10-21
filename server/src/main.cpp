@@ -109,34 +109,51 @@ int main(int argc, char *argv[])
                 {
                     table[i]->close();
                     galaxy.rmPlayer(names[i]);
+                    galaxy.erase(names[i]);
                     select.eradicate(i);
+                    table.erase(i);
+                    names.erase(i);
                     continue;
                 }
 
                 buf[bytes] = '\0';
                 string buffer(buf);
 
-                cout << "Client: " << buffer;
                 auto pos = buffer.find(':');
                 if(buffer.substr(0, pos) == "Login")
                 {
                     string name = buffer.substr(pos + 1,
                                                 buffer.size() - pos);
+                    for(auto& e : name)
+                    {
+                        if(e == '\n')
+                            e = ' ';
+                    }
+
+                    cout << name << "trying to login...\n";
+
+                    cout << "Sockets: " << table.size() << "\n";
+                    cout << "Galaxy: " << galaxy.size() << "\n";
+
+                    cout << "Names, ";
+                    for(auto& e : names)
+                        cout << e.first << ": " << e.second;
 
                     Player *p;
                     try { p = &galaxy.newPlayer(name); }
                     catch(...)
                     {
                         table[i]->close();
+                        galaxy.rmPlayer(names[i]);
+                        galaxy.erase(names[i]);
                         select.eradicate(i);
+                        table.erase(i);
+                        names.erase(i);
+                        continue;
                     } 
 
-                    for(auto& e : name)
-                    {
-                        if(e == '\n')
-                            e = ' ';
-                    }
                     names[i] = name;
+                    cout << name << " logging in" << endl;
 
                     string planet = "Planet:" + to_string(p->world().x())
                                     + ":" + to_string(p->world().y()) + "\n";
