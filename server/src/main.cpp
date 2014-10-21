@@ -6,7 +6,9 @@
 #include "network/server.h"
 #include "network/select.h"
 #include "tools/remove_if.hpp"
+#include "game/galaxy.h"
 #include <map>
+#include <memory>
 #include <iostream>
 using namespace std;
 
@@ -63,12 +65,15 @@ int main(int argc, char *argv[])
     }
 
     // Client and select poll structure setup
-    vector<ClientSocket> clients;
-    map<int, ClientSocket*> table;
+    //vector<ClientSocket> clients;
+    map<int, unique_ptr<ClientSocket>> table;
+    map<int, string> names;
     Multiplexer select;
 
     server.setNonBlock(1);
-    select.insert(&server);
+    select.insert(server);
+
+    Galaxy galaxy;
 
     while(true)
     {
@@ -80,50 +85,94 @@ int main(int argc, char *argv[])
 
         for(int i = 0; i < FD_SETSIZE; ++i)
         {
-            if(i == server && select.setRead(i))
+            if(select.setRead(i))
             {
-                clients.emplace_back(ClientSocket());
-
-                ClientSocket& client = clients.back();
-                client = server.accept();
-
-                if(client)
+                if(server == i)
                 {
-                    client.setNonBlock(1);
-                    select.insert(&client);
-                    table[client] = &client;
+                    ClientSocket *client = new ClientSocket(server.accept());
+
+                    if(client)
+                    {
+                        client->setNonBlock(1);
+                        select.insert(*client);
+                        table[*client] = unique_ptr<ClientSocket>(client);
+                    }
+                    else
+                        log << "A client was rejected from the server";
+
+                    continue;
                 }
-                else
-                    log << "A client was rejected from the server";
 
-            }
-            else if(select.setRead(i))
-            {
-                char buf[512];
-
-                int bytes = recv(i, buf, 511, 0);
-                if(bytes < 0)
+                char buf[256];
+                int bytes = recv(i, &buf[0], 255, 0);
+                if(bytes <= 0)
                 {
+                    table[i]->close();
+                    galaxy.rmPlayer(names[i]);
                     select.eradicate(i);
-                    tools::remove_if(clients,
-                        [i](const ClientSocket& sock) {
-                            return i == sock;
-                        }
-                    );
+                    continue;
                 }
-                else
+
+                buf[bytes] = '\0';
+                string buffer(buf);
+
+                cout << "Client: " << buffer;
+                auto pos = buffer.find(':');
+                if(buffer.substr(0, pos) == "Login")
                 {
-                    buf[bytes - 1] = '\0';
-                    cout << buf << endl;
-                    table[i]->write("Yolo!\n");
+                    string name = buffer.substr(pos + 1,
+                                                buffer.size() - pos);
+
+                    Player *p;
+                    try { p = &galaxy.newPlayer(name); }
+                    catch(...)
+                    {
+                        table[i]->close();
+                        select.eradicate(i);
+                    } 
+
+                    for(auto& e : name)
+                    {
+                        if(e == '\n')
+                            e = ' ';
+                    }
+                    names[i] = name;
+
+                    string planet = "Planet:" + to_string(p->world().x())
+                                    + ":" + to_string(p->world().y()) + "\n";
+                    table[i]->write(planet.c_str());
+
                 }
+                else if(buffer.substr(0, pos) == "Year")
+                {
+                    string years = buffer.substr(pos + 1,
+                                                 buffer.size() - pos - 1);
+
+                    int year = stoi(years);
+                    galaxy[names[i]].score = year * 3.3;
+
+                    string chart = "";
+                    for(auto& e : names)
+                    {
+                        chart += e.second + ": "
+                                 + to_string(galaxy[names[e.first]].score) + "\n";
+                    }
+
+                    for(auto& client : table)
+                    {
+                        client.second->write(chart.c_str());
+                    }
+                }
+                // End of client handler block
             }
         }
-
     }
 
-    for(auto& client : clients)
-        client.close();
+    for(auto& client : table)
+    {
+        if(client.second > 0)
+            client.second->close();
+    }
 
     return 0;
 }

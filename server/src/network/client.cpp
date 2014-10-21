@@ -12,5 +12,8 @@ ClientSocket::ClientSocket(int&& fd)
     _fd = move(fd);
 }
 
-ClientSocket::~ClientSocket() = default;
+ClientSocket::~ClientSocket()
+{
+    // Do nothing
+}
 

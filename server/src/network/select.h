@@ -10,13 +10,12 @@
 
 class Multiplexer
 {
-    std::vector<Socket *> sockets;
     fd_set afds, wfds, rfds;
 
 public:
     Multiplexer();
-    bool insert(Socket *sock);
-    void eradicate(int s);
+    void insert(int sock);
+    void eradicate(int sock);
 
     int poll();
     bool setWrite(int sock);
