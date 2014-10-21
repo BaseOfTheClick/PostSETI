@@ -78,11 +78,11 @@ public class Network : MonoBehaviour
     void Start()
     {
         socket = new Net.Connector("np.nixcode.us", 31337);
-        socket.write("Login:" + "Kevin" + "\n");
+        socket.write("Login:" + "Gani" + "\n");
         string reply = socket.readChunk(512);
     }
 
-    // Update is caleled once per frame
+    // Update is called once per frame
     void Update()
     {
 

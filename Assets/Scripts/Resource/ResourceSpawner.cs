@@ -7,7 +7,7 @@ public class ResourceSpawner : MonoBehaviour {
     public IntelligentPlanet planet;
     private Vector3[] planetVertices;
 
-    private float timeInterval = 3f;
+    public float timeInterval = 1f;
     private float timeAccumulate = 0;
 
 	// Use this for initialization
@@ -25,6 +25,7 @@ public class ResourceSpawner : MonoBehaviour {
         {
             Vector3 randomVertex = planetVertices[Random.Range(0, planetVertices.Length)];
             Vector3 vertexWithParentTransform = planet.gameObject.transform.TransformPoint(randomVertex);
+
             GameObject clone = Instantiate(resourcePackage, vertexWithParentTransform, Quaternion.identity) as GameObject;
             clone.transform.parent = planet.gameObject.transform;
 
