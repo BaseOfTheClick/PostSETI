@@ -71,24 +71,38 @@ namespace Net
 public class Network : MonoBehaviour
 {
 
-    public Net.Connector socket = null;
+    private Net.Connector socket = null;
+    private const string HOST = "np.nixcode.us";
+    private const int PORT = 31337;
+
+    // Counter and limit
     private int i = 0;
+    private const int FRAME_LIMIT = 20;
 
     private string name = string.Empty;
 
     // Use this for initialization
-    void Start() {
+    void Start()
+    {
+        // Do nothing, use Awake()
     }
 
-    void Awake() {
+    void Awake()
+    {
         name = Login.playerName;
         if(name == null)
         {
-            Debug.Log("Login object null");
+            Debug.Log("Login script was not in a persistent state");
             return;
         }
 
-        socket = new Net.Connector("np.nixcode.us", 31337);
+        try {
+            socket = new Net.Connector(HOST, PORT);
+        } catch {
+            Debug.Log("Net.Connector(" + HOST + ", " + PORT.ToString()
+                      + ") failed to initialize");
+            return;
+        }
         socket.write("Login:" + name + "\n");
         string reply = socket.readChunk(512);
     }
@@ -96,14 +110,15 @@ public class Network : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (i++ == 10)
-        {
-            GameObject obj = GameObject.Find("_GameManager");
-            string yr = obj.GetComponent<YearCounter>().currentYear.ToString();
-            socket.write("Year:" + yr + "\n");
-            gameObject.GetComponent<Text>().text = socket.readChunk(256);
-            i = 0;
-        }
+        if(++i != FRAME_LIMIT)
+            return;
+
+        GameObject obj = GameObject.Find("_GameManager");
+        string yr = obj.GetComponent<YearCounter>().currentYear.ToString();
+        socket.write("Year:" + yr + "\n");
+        gameObject.GetComponent<Text>().text = socket.readChunk(256);
+        i = 0;
 
     }
+
 }

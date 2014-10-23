@@ -15,6 +15,7 @@ public class SceneFading : MonoBehaviour {
 
 	}
 
+    /*
     void OnGUI() {
         alpha += fadeDir * fadeSpeed * Time.deltaTime;
         alpha = Mathf.Clamp01(alpha);
@@ -25,6 +26,7 @@ public class SceneFading : MonoBehaviour {
                         fadeOutTexture);
 
     }
+    */
 
     public float BeginFade(int direction) {
         fadeDir = direction;
