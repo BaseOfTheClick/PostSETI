@@ -91,7 +91,7 @@ public class Network : MonoBehaviour
         socket = new Net.Connector("np.nixcode.us", 31337);
         socket.write("Login:" + name + "\n");
         string reply = socket.readChunk(512);
-}
+    }
 
     // Update is called once per frame
     void Update()
