@@ -4,30 +4,29 @@ using UnityEngine.EventSystems;
 using System.Collections;
 
 public class Login : MonoBehaviour {
-    public string playerName = string.Empty;
-
-    [SerializeField]
-    private InputField input = null;
-
-    [SerializeField]
-    private Button button = null;
+    public static string playerName = string.Empty;
 
     // Use this for initialization
 	void Start () {
-        DontDestroyOnLoad(GetComponent<Login>());
-
-        input.onSubmit.AddListener((value) => startGame(value));
-        button.onClick.AddListener(() => startGame(input.value));
-
+        DontDestroyOnLoad(gameObject);
+        GetComponent<InputField>().onSubmit.AddListener(startGame);
     }
 
     public void startGame(string name) {
-        playerName = input.value;
-
-        Application.LoadLevel(1);
+        playerName = GetComponent<InputField>().value;
+        Application.LoadLevel(Application.loadedLevel + 1);
     }
+
+    IEnumerator ChangeLevel() {
+        InputField input = GetComponent<InputField>();
+        float sec = GetComponent<SceneFading>().BeginFade(1);
+        yield return new WaitForSeconds(sec);
+        Application.LoadLevel(Application.loadedLevel + 1);
+    }
+
 	// Update is called once per frame
 	void Update () {
 	
 	}
 }
+

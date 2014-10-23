@@ -79,6 +79,7 @@
      <Compile Include="Assets\Scripts\GameManager\GlobalRateController.cs" />
      <Compile Include="Assets\Scripts\GameManager\PauseGame.cs" />
      <Compile Include="Assets\Scripts\GameManager\PoliticsGuy.cs" />
+     <Compile Include="Assets\Scripts\GameManager\SceneFading.cs" />
      <Compile Include="Assets\Scripts\GameManager\ScienceGuy.cs" />
      <Compile Include="Assets\Scripts\IntelligentPlanet.cs" />
      <Compile Include="Assets\Scripts\Login\Login.cs" />

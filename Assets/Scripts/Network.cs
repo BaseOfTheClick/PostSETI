@@ -74,33 +74,35 @@ public class Network : MonoBehaviour
     public Net.Connector socket = null;
     private int i = 0;
 
-    public string name = "";
+    private string name = string.Empty;
 
     // Use this for initialization
     void Start() {
     }
 
-    void OnGUI()
-    {
-        Login login = GetComponent<Login>();
-        name = login.playerName;
+    void Awake() {
+        name = Login.playerName;
+        if(name == null)
+        {
+            Debug.Log("Login object null");
+            return;
+        }
 
         socket = new Net.Connector("np.nixcode.us", 31337);
         socket.write("Login:" + name + "\n");
         string reply = socket.readChunk(512);
-    }
+}
 
-    // Update is caleled once per frame
+    // Update is called once per frame
     void Update()
     {
-
         if (i++ == 10)
         {
+            GameObject obj = GameObject.Find("_GameManager");
+            string yr = obj.GetComponent<YearCounter>().currentYear.ToString();
+            socket.write("Year:" + yr + "\n");
+            gameObject.GetComponent<Text>().text = socket.readChunk(256);
             i = 0;
-            socket.write("Year:"
-                + GameObject.Find("_GameManager").GetComponent<YearCounter>().currentYear.ToString() + "\n");
-            string text = socket.readChunk(256);
-            gameObject.GetComponent<Text>().text = text;
         }
 
     }
