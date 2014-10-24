@@ -20,8 +20,10 @@ public class YearCounter : MonoBehaviour {
 	void Start () {
 	
 		if (yearCounterGUIText.GetComponent<Text>() != null) {
+
 			text = yearCounterGUIText.GetComponent<Text>();
 			startingText = text.text;
+
 		} else {
 
 			Debug.LogError ( gameObject.name + "does not appear to have a GUI Text component attached." );
@@ -35,12 +37,6 @@ public class YearCounter : MonoBehaviour {
 		currentYear += Time.deltaTime * 50;
 
 		text.text = startingText + "\n" + Mathf.RoundToInt(currentYear).ToString();
-
-        if (Time.timeScale != 0)
-        {
-            GALAXY.transform.localScale = GALAXY.transform.localScale * /*(1 - 4f)*/ (1 -(Time.deltaTime * scaleSpeed));
-        }
-
-	
+			
 	}
 }
